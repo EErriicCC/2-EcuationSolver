@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
     <title>Ecuation solver</title>
 </head>
 <body>
-    <h1>2ºEcuation solver</h1>
-    <p>Give the value from</p>
-    <input type="text" id="a" placeholder="a">
-    <input type="text" id="b" placeholder="b">
-    <input type="text" id="c" placeholder="c">
+    <h1>2nd degree equation solver</h1>
+    <p>Enter the coefficients</p>
+    <input type="number" id="a" placeholder="a">
+    <input type="number" id="b" placeholder="b">
+    <input type="number" id="c" placeholder="c">
     <br>
     <button onclick= "ecuationSolver()">Calculate</button>
     <p id="solution1"></p>
     <p id="solution2"></p>
+    <script src="index.js"></script> <!-- Es importante notar que el script debe estar al final del archivo HTML para garantizar que el DOM este cargado antes de intentar acceder a los elementos. -->
 </body>
 </html>
