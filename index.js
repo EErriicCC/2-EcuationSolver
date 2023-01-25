@@ -27,14 +27,14 @@ const ecuationSolver = function(){
         if (discriminant<0){
             let x1 = -bValue / (2*aValue);
             let x2 = Math.sqrt(-discriminant) / (2*aValue);
-            s1.innerHTML = `Soluciones imaginarias: <br> x1= ${x1} + <i>${x2}i</i>, <br> x2= ${x1} - <i>${x2}i</i>`;
+            s1.innerHTML = `Soluciones imaginarias: <br> x1= ${x1.toFixed(3)} + <i>${x2.toFixed(3)}i</i>, <br> x2= ${x1.toFixed(3)} - <i>${x2.toFixed(3)}i</i>`;
             s2.innerText = '';
         } else {
             discriminant = Math.sqrt(discriminant);
             let x1 = (-bValue + discriminant) / (2*aValue); 
             let x2 = (-bValue - discriminant) / (2*aValue);
-            s1.innerText = x1;
-            s2.innerText = x2;
+            s1.innerText = `x1 = ${x1.toFixed(3)}`;
+            s2.innerText = `x2 = ${x2.toFixed(3)}`;
         }
     }
     aInput.addEventListener('input',Solver);
