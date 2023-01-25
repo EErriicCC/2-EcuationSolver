@@ -1,8 +1,8 @@
-const ecuationSolver = function(){
+const EcuationSolver = function(){
     let aInput = document.getElementById("a");
     let bInput = document.getElementById("b");
     let cInput = document.getElementById("c");
-    const Solver = function(){
+    const solver = () => {
 
         let s1 = document.getElementById("solution1");
         let s2 = document.getElementById("solution2");
@@ -37,7 +37,7 @@ const ecuationSolver = function(){
             s2.innerText = `x2 = ${x2.toFixed(3)}`;
         }
     }
-    aInput.addEventListener('input',Solver);
-    bInput.addEventListener('input',Solver);
-    cInput.addEventListener('input',Solver);
+    aInput.addEventListener('input',solver);
+    bInput.addEventListener('input',solver);
+    cInput.addEventListener('input',solver);
 }
