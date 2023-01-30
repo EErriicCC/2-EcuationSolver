@@ -1,4 +1,4 @@
-const EcuationSolver = function(){
+const EcuationSolver = () => {
     let aInput = document.getElementById("a");
     let bInput = document.getElementById("b");
     let cInput = document.getElementById("c");
